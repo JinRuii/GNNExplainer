@@ -18,10 +18,24 @@ This project’s insights can significantly contribute to real-world urban plann
 
 These applications illustrate how the model’s outputs can be directly leveraged to make cities more livable, equitable, and sustainable.
 
+## Project Overview
+This project is designed to implement and explain the decisions made by Graph Neural Networks (GNN) using the GNNExplainer tool. It consists of input and output data handling, as well as the core functionality script that facilitates model explanation.
 
-## 📁 Project Structure
+## Folder Structure
 
-The repository consists of the following directories and files:
+### :open_file_folder: input file
+- **Description**: Contains the input data files used by the GNN model.
+- **Contents**: Data files (adjust this according to what actually is in the folder).
+
+### :file_folder: output file
+- **Description**: Stores the output from the GNN model, including predictions and model explanations.
+- **Contents**: Result files (adjust this according to what actually is in the folder).
+
+### :page_facing_up: GNNExplainer.py
+- **Description**: Python script containing the implementation of the GNN model and the GNNExplainer functionality.
+- **Usage**:
+  ```bash
+  python GNNExplainer.py [arguments]
 
 
 ## 🧠 Model Details
@@ -58,15 +72,25 @@ Edges represent spatial or functional proximity between locations, providing the
 
 ### Prerequisites
 
-Ensure you have the following libraries installed:
-- `torch`
-- `torch_geometric`
-- `pandas`
-- `scikit-learn`
-  
-Install dependencies using:
+Ensure you have the following specific versions of libraries installed for proper compatibility:
+
+- PyTorch (CPU version): `2.4.1`
+- torch_geometric: `2.0.4`
+- torch_scatter: `2.0.9`
+- torch_sparse: `0.6.12`
+- torch_cluster: `1.5.9`
+- torch_spline_conv: `1.2.1`
+- scikit-learn: `0.24.2`
+- pandas: `1.3.3`
+- numpy: `1.21.2`
+
+To install all dependencies with the specified versions, use the following command:
+
 ```bash
-pip install torch torch_geometric pandas scikit-learn
+pip install torch==2.4.1 torch_geometric==2.0.4 torch_scatter==2.0.9 \
+torch_sparse==0.6.12 torch_cluster==1.5.9 torch_spline_conv==1.2.1 \
+scikit-learn==0.24.2 pandas==1.3.3 numpy==1.21.2
+
 
 
 
